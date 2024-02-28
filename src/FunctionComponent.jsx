@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 const FunctionComponent = () => {
-  const [name, setName] = useState("Rakib");
-  const [age, setAge] = useState(45);
+  const [name, setName] = useState("");
+  const [age, setAge] = useState(0);
 
   function decrement() {
     setAge((currentAge) => {
@@ -19,7 +19,7 @@ const FunctionComponent = () => {
   return (
     <div>
       <div>
-        <input type="text" defaultValue={name} onChange={e => setName(e.target.value)}/>
+        <input type="text" value={name} onChange={e => setName(e.target.value)}/>
       </div>
       <br />
       <button onClick={decrement}>-</button>
