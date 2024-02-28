@@ -1,7 +1,9 @@
+import FunctionComponent from "./FunctionComponent";
+
 function App() {
   return (
     <div>
-      <h1>Helloooo</h1>
+      <FunctionComponent />
     </div>
   );
 }
