@@ -28,7 +28,7 @@ const FunctionComponent = () => {
       <br />
       <br />
       <div>
-        My name is {name} and I am {age} years old
+        My name is {name} and I am {age} years old.
       </div>
     </div>
   );
