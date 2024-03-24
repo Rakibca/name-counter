@@ -17,20 +17,23 @@ const FunctionComponent = () => {
   }
 
   return (
-    <div>
-      <div>
-        <input type="text" value={name} onChange={e => setName(e.target.value)}/>
-      </div>
+    <>
+      <input
+        type="text"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+      <br />
       <br />
       <button onClick={decrement}>-</button>
       {age}
       <button onClick={increment}>+</button>
       <br />
       <br />
-      <div>
+      <h1>
         My name is {name} and I am {age} years old.
-      </div>
-    </div>
+      </h1>
+    </>
   );
 };
 
